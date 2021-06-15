@@ -50,7 +50,7 @@ export default function PresentationPage() {
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  My Medicine Tracker
+                  My Medication Tracker
                 </h1>
                 <h3 className={classes.title}>
                   Setup and forget. We will remind you!

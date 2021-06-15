@@ -41,18 +41,18 @@ const componentsStyle = (theme) => ({
     position: "relative",
   },
   componentsBackground: {
-    // [theme.breakpoints.down("sm")]: {
-    //   maxWidth: "850px!important",
-    //   maxHeight: "480px!important",
-    //   marginTop: "12vh",
-    //   left: "-12px",
-    // },
-    // [theme.breakpoints.down(768)]: {
-    //   maxWidth: "350px!important",
-    //   maxHeight: "250px!important",
-    //   marginTop: "12vh",
-    //   left: "-12px",
-    // },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "850px!important",
+      maxHeight: "480px!important",
+      marginTop: "12vh",
+      left: "-12px",
+    },
+    [theme.breakpoints.down(768)]: {
+      maxWidth: "350px!important",
+      maxHeight: "250px!important",
+      marginTop: "12vh",
+      left: "-12px",
+    },
     width: "auto",
     left: "-100px",
     top: 0,
