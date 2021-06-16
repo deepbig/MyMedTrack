@@ -31,11 +31,11 @@ export default function SectionDescription() {
               and it becomes increasingly more difficult to keep track of all the details.
               Important things to remember about our medication are schedule, dosage,
               and purpose, amongst others. MyMedTrack aims to provide a simple,
-              user-friendly area for people to enter these important details about their medicine
+              user-friendly area for people to enter these important details about their medication
               as well as offer key features like trackers, reminders and medication list generation.
               Our tagline “Setup and forget. We’ll remind you” embodies everything we are trying to
               accomplish with this product. MyMedTrack will offer peace of mind to our users to ensure
-              a dose is never missed and a medicine is never forgotten when visiting their doctor!
+              a dose is never missed and a medication is never forgotten when visiting their doctor!
             </h4>
           </GridItem>
         </GridContainer>
