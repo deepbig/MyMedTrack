@@ -32,7 +32,7 @@ export default function SectionCards() {
               2. What can we make the product user-friendly for our target users? <br />
               3. What features do our target users need in order to see value in the product? <br />
               4. Why is this approach better than what they are doing today? <br />
-              5. Where will users use this product? <br />
+              5. What types of devices are you familiar with? <br />
               </h5>
             </div>
           </GridItem>
