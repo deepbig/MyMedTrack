@@ -19,6 +19,7 @@ import Button from "components/CustomButtons/Button";
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
 import SectionCards from "views/PresentationPage/Sections/SectionCards.js";
+import SectionNextPage from "views/PresentationPage/Sections/SectionNextPage";
 import presentationStyle from "assets/jss/my-med-track/views/presentationStyle.js";
 
 const useStyles = makeStyles(presentationStyle);
@@ -66,7 +67,7 @@ export default function PresentationPage() {
         <SectionCards />
 
       </div>
-
+      <SectionNextPage />
       <Footer
         theme="white"
         content={

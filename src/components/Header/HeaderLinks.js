@@ -10,8 +10,10 @@ import {
 
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccountBalance from "@material-ui/icons/AccountBalance";
+import DescriptionIcon from '@material-ui/icons/Description';
+import WidgetsIcon from '@material-ui/icons/Widgets';
 
-import CustomDropdown from  "components/CustomDropdown/CustomDropdown.js";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import styles from "assets/jss/my-med-track/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -78,9 +80,15 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={ViewCarousel}
           dropdownList={[
-            <Link to="/about-us" className={classes.dropdownLink}>
-              <AccountBalance className={classes.dropdownIcons} /> About Us
+            <Link to="/" className={classes.dropdownLink}>
+              <DescriptionIcon className={classes.dropdownIcons} /> Concept Description
             </Link>,
+            <Link to="/data-gathering" className={classes.dropdownLink}>
+              <WidgetsIcon className={classes.dropdownIcons} /> Data Gathering
+            </Link>,
+            // <Link to="/about-us" className={classes.dropdownLink}>
+            //   <AccountBalance className={classes.dropdownIcons} /> About Us
+            // </Link>,
           ]}
         />
       </ListItem>

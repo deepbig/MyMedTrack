@@ -5,6 +5,7 @@ import { Router, Route, Switch } from "react-router";
 
 import "assets/scss/my-med-track.scss";
 import PresentationPage from "views/PresentationPage/PresentationPage";
+import DataGatheringPage from "views/DataGatheringPage/DataGatheringPage";
 import reportWebVitals from './reportWebVitals';
 
 var hist = createBrowserHistory();
@@ -13,8 +14,8 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={hist}>
       <Switch>
-        <Route path="/" component={PresentationPage} />
-
+        <Route exact path="/" component={PresentationPage} />
+        <Route path="/data-gathering" component={DataGatheringPage} />
       </Switch>
     </Router>
   </React.StrictMode>,

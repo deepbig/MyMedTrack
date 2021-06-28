@@ -334,6 +334,16 @@ const title = {
   // fontFamily: `"Roboto Slab", "Times New Roman", serif`,
 };
 
+const subtitle = {
+  color: grayColor[1],
+  textDecoration: "none",
+  fontWeight: "700",
+  marginTop: "30px",
+  minHeight: "32px",
+  // fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+};
+
+
 const cardTitle = {
   "&, & a": {
     ...title,
@@ -493,5 +503,6 @@ export {
   mrAuto,
   btnLink,
   coloredShadow,
+  subtitle,
   hexToRgb,
 };
