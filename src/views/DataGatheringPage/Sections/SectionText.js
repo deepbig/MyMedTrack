@@ -240,7 +240,19 @@ export default function SectionText() {
         <GridItem xs={12} sm={8} md={8}>
           <h2 className={classes.title}>Domain Analysis</h2>
           <p>
-            short description about this section.
+          The MyMedTrack application will consist of five main entities and their relationships. 
+          The first entity is the Profile which stores basic information about the user account 
+          and has a one to many relationship with the User entity. The User entity stores the name 
+          of the user it is representing and has a one to many relationship with the Medication 
+          entity. The Medication entity represents an entry for a medication that the user will take.
+           This entity will store information like the name, dosage, special instructions, and 
+           prescription renewal frequency. Medication has a one to many relationship with the 
+           MedicationSchedule entity. The MedicationSchedule entity will store the time that the user 
+           will take each medication. Multiples of this entity exist in the case that a user takes 
+           a medicine more than once in a given day. The bottom diagram of the above figure shows 
+           the object relationships. A Profile contains a list of Users. Users will enter medication 
+           details which will then be used to remind the user to take their medication. Lastly, a user 
+           can generate a report that contains a list of their medication details.
           </p>
 
           <br />
