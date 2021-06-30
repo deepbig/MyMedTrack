@@ -6,6 +6,7 @@ import { Router, Route, Switch } from "react-router";
 import "assets/scss/my-med-track.scss";
 import PresentationPage from "views/PresentationPage/PresentationPage";
 import DataGatheringPage from "views/DataGatheringPage/DataGatheringPage";
+import InterviewsPage from "views/InterviewsPage/InterviewsPage";
 import reportWebVitals from './reportWebVitals';
 
 var hist = createBrowserHistory();
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={PresentationPage} />
         <Route path="/data-gathering" component={DataGatheringPage} />
+        <Route path="/interviews" component={InterviewsPage} />
       </Switch>
     </Router>
   </React.StrictMode>,

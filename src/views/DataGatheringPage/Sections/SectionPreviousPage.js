@@ -10,7 +10,9 @@ import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
 import Success from "components/Typography/Success.js";
 
-import question_mark from "assets/img/question-mark.png";
+import question_mark from "assets/img/question-mark-background.png";
+import interviews_img from "assets/img/conversation-interview.png";
+
 
 import sectionNextPage from "assets/jss/my-med-track/sectionNextPageStyle.js";
 
@@ -27,7 +29,36 @@ export default function SectionPreviousPage() {
               See More Pages of the Project
             </h2>
             <GridContainer justify="center">
-              <GridItem sm={10} md={6}>
+              
+              <GridItem sm={10} md={5}>
+                <Card blog>
+                  <CardHeader image>
+                    <a href="/interviews">
+                      <img src={interviews_img} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + interviews_img + ")",
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <h4 className={classes.cardTitle}>
+                      <a href="/interviews">
+                        Interviews
+                      </a>
+                    </h4>
+                    <p className={classes.description}>
+                      Summaries of the Four Interviews We Conducted.
+                      <a href="/interviews"> Read More </a>
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
+
+              <GridItem sm={10} md={5}>
                 <Card blog>
                   <CardHeader image>
                     <a href="/">
@@ -42,9 +73,6 @@ export default function SectionPreviousPage() {
                     />
                   </CardHeader>
                   <CardBody>
-                    <Success>
-                      <h6>Previous Page</h6>
-                    </Success>
                     <h4 className={classes.cardTitle}>
                       <a href="/">
                         Concept Description
@@ -57,6 +85,8 @@ export default function SectionPreviousPage() {
                   </CardBody>
                 </Card>
               </GridItem>
+
+
             </GridContainer>
           </GridItem>
         </GridContainer>

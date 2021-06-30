@@ -86,6 +86,9 @@ export default function HeaderLinks(props) {
             <Link to="/data-gathering" className={classes.dropdownLink}>
               <WidgetsIcon className={classes.dropdownIcons} /> Data Gathering
             </Link>,
+            <Link to="/interviews" className={classes.dropdownLink}>
+              <WidgetsIcon className={classes.dropdownIcons} /> Interviews
+            </Link>,
             // <Link to="/about-us" className={classes.dropdownLink}>
             //   <AccountBalance className={classes.dropdownIcons} /> About Us
             // </Link>,

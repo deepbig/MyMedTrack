@@ -8,15 +8,15 @@ import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
+import Success from "components/Typography/Success.js";
 
-import myMedTrack_ERD from "assets/img/myMedTrack_ERD.png";
-import interviews_img from "assets/img/conversation-interview.png";
+import question_mark from "assets/img/question-mark-background.png";
 
 import sectionNextPage from "assets/jss/my-med-track/sectionNextPageStyle.js";
 
 const useStyles = makeStyles(sectionNextPage);
 
-export default function SectionNextPage() {
+export default function SectionPreviousPage() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -27,31 +27,30 @@ export default function SectionNextPage() {
               See More Pages of the Project
             </h2>
             <GridContainer justify="center">
-
-
-              <GridItem sm={10} md={5}>
+              
+              <GridItem sm={10} md={6}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="/data-gathering">
-                      <img src={myMedTrack_ERD} alt="..." />
+                    <a href="/">
+                      <img src={question_mark} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: "url(" + myMedTrack_ERD + ")",
+                        backgroundImage: "url(" + question_mark + ")",
                         opacity: "1",
                       }}
                     />
                   </CardHeader>
                   <CardBody>
                     <h4 className={classes.cardTitle}>
-                      <a href="/data-gathering">
-                        Data Gathering
+                      <a href="/">
+                        Concept Description
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      User Analysis, Task Analysis, and Domain Analysis of the project.
-                      <a href="/data-gathering"> Read More </a>
+                      Project Description, List of Features, Design Question, Research Questions, and Target Users of the project.
+                      <a href="/"> Read More </a>
                     </p>
                   </CardBody>
                 </Card>
@@ -59,8 +58,6 @@ export default function SectionNextPage() {
 
             </GridContainer>
           </GridItem>
-
-
         </GridContainer>
       </div>
     </div>
