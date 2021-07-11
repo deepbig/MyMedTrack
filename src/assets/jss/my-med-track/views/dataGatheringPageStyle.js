@@ -14,6 +14,10 @@ const dataGatheringPageStyle = {
   textCenter: {
     textAlign: "center",
   },
+  parallax: {
+    height: "60vh",
+    overflow: "hidden",
+  },
   title: {
     ...title,
     color: whiteColor,

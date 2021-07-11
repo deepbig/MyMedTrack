@@ -7,6 +7,7 @@ import "assets/scss/my-med-track.scss";
 import PresentationPage from "views/PresentationPage/PresentationPage";
 import DataGatheringPage from "views/DataGatheringPage/DataGatheringPage";
 import InterviewsPage from "views/InterviewsPage/InterviewsPage";
+import SketchingIdeationPage from "views/SketchingIdeationPage/SketchingIdeationPage";
 import reportWebVitals from './reportWebVitals';
 
 var hist = createBrowserHistory();
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route exact path="/" component={PresentationPage} />
         <Route path="/data-gathering" component={DataGatheringPage} />
         <Route path="/interviews" component={InterviewsPage} />
+        <Route path="/sketching-ideation" component={SketchingIdeationPage} />
       </Switch>
     </Router>
   </React.StrictMode>,

@@ -10,7 +10,7 @@ import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
 import Success from "components/Typography/Success.js";
 
-import question_mark from "assets/img/question-mark-background.png";
+import sketches from "assets/img/assets-resketches/Screenshot1.png";
 
 import sectionNextPage from "assets/jss/my-med-track/sectionNextPageStyle.js";
 
@@ -27,30 +27,30 @@ export default function SectionPreviousPage() {
               See More Pages of the Project
             </h2>
             <GridContainer justify="center">
-              
-              <GridItem sm={10} md={6}>
+
+              <GridItem sm={10} md={5}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="/">
-                      <img src={question_mark} alt="..." />
+                    <a href="/sketching-ideation">
+                      <img src={sketches} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: "url(" + question_mark + ")",
+                        backgroundImage: "url(" + sketches + ")",
                         opacity: "1",
                       }}
                     />
                   </CardHeader>
                   <CardBody>
                     <h4 className={classes.cardTitle}>
-                      <a href="/">
-                        Concept Description
+                      <a href="/sketching-ideation">
+                        Sketching and Ideation
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Project Description, List of Features, Design Question, Research Questions, and Target Users of the project.
-                      <a href="/"> Read More </a>
+                      sketches and re-sketches with justifications.
+                      <a href="/sketching-ideation"> Read More </a>
                     </p>
                   </CardBody>
                 </Card>

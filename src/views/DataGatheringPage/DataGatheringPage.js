@@ -38,7 +38,7 @@ export default function DataGatheringPage() {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "info",
         }}
       />
