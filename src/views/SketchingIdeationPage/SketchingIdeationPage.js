@@ -56,9 +56,6 @@ export default function SketchingIdeationPage() {
                 sketches and re-sketches with justifications.
               </h4>
               <br />
-              {/* <Button color="rose" size="lg" round>
-              <FormatAlignLeft /> Read Article
-            </Button> */}
             </GridItem>
           </GridContainer>
         </div>

@@ -36,6 +36,7 @@ const imagesStyles = {
   imgCard: {
     width: "100%",
     borderRadius: "calc(.25rem - 1px)",
+    
   },
   imgCardOverlay: {
     position: "absolute",

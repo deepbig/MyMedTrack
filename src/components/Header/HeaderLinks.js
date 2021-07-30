@@ -12,9 +12,14 @@ import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccountBalance from "@material-ui/icons/AccountBalance";
 import DescriptionIcon from '@material-ui/icons/Description';
 import WidgetsIcon from '@material-ui/icons/Widgets';
+import ForumIcon from '@material-ui/icons/Forum';
+import GestureIcon from '@material-ui/icons/Gesture';
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
+import SlideshowIcon from '@material-ui/icons/Slideshow';
 
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import styles from "assets/jss/my-med-track/components/headerLinksStyle.js";
+
 
 const useStyles = makeStyles(styles);
 
@@ -87,11 +92,18 @@ export default function HeaderLinks(props) {
               <WidgetsIcon className={classes.dropdownIcons} /> Data Gathering
             </Link>,
             <Link to="/interviews" className={classes.dropdownLink}>
-              <WidgetsIcon className={classes.dropdownIcons} /> Interviews
+              <ForumIcon className={classes.dropdownIcons} /> Interviews
             </Link>,
             <Link to="/sketching-ideation" className={classes.dropdownLink}>
-              <WidgetsIcon className={classes.dropdownIcons} /> Sketching and Ideation
+              <GestureIcon className={classes.dropdownIcons} /> Sketching and Ideation
             </Link>,
+            <Link to="/prototyping-evaluation" className={classes.dropdownLink}>
+              <LaptopMacIcon className={classes.dropdownIcons} /> Prototyping and Evaluation
+            </Link>,
+            <Link to="/presentation" className={classes.dropdownLink}>
+              <SlideshowIcon className={classes.dropdownIcons} /> Presentation
+            </Link>,
+
             // <Link to="/about-us" className={classes.dropdownLink}>
             //   <AccountBalance className={classes.dropdownIcons} /> About Us
             // </Link>,

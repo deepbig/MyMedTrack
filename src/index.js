@@ -8,6 +8,8 @@ import PresentationPage from "views/PresentationPage/PresentationPage";
 import DataGatheringPage from "views/DataGatheringPage/DataGatheringPage";
 import InterviewsPage from "views/InterviewsPage/InterviewsPage";
 import SketchingIdeationPage from "views/SketchingIdeationPage/SketchingIdeationPage";
+import ProtoEvalPage from "views/ProtoEvalPage/ProtoEvalPage";
+import FinalPresentPage from "views/FinalPresentPage/FinalPresentPage";
 import reportWebVitals from './reportWebVitals';
 
 var hist = createBrowserHistory();
@@ -20,6 +22,8 @@ ReactDOM.render(
         <Route path="/data-gathering" component={DataGatheringPage} />
         <Route path="/interviews" component={InterviewsPage} />
         <Route path="/sketching-ideation" component={SketchingIdeationPage} />
+        <Route path="/prototyping-evaluation" component={ProtoEvalPage} />
+        <Route path="/Presentation" component={FinalPresentPage} />
       </Switch>
     </Router>
   </React.StrictMode>,

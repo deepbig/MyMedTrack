@@ -9,8 +9,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import Info from "components/Typography/Info.js";
 
-import myMedTrack_ERD from "assets/img/myMedTrack_ERD.png";
-import interviews_img from "assets/img/conversation-interview.png";
+import computerProto1 from "assets/img/paper-prototype1.png";
 
 import sectionNextPage from "assets/jss/my-med-track/sectionNextPageStyle.js";
 
@@ -32,26 +31,26 @@ export default function SectionNextPage() {
               <GridItem sm={10} md={5}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="/data-gathering">
-                      <img src={myMedTrack_ERD} alt="..." />
+                    <a href="/prototyping-evaluation">
+                      <img src={computerProto1} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: "url(" + myMedTrack_ERD + ")",
+                        backgroundImage: "url(" + computerProto1 + ")",
                         opacity: "1",
                       }}
                     />
                   </CardHeader>
                   <CardBody>
                     <h4 className={classes.cardTitle}>
-                      <a href="/data-gathering">
-                        Data Gathering
+                      <a href="/prototyping-evaluation">
+                        Prototyping and Evaluation
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      User Analysis, Task Analysis, and Domain Analysis of the project.
-                      <a href="/data-gathering"> Read More </a>
+                    Paper prototyping, computer prototyping and usability testing evaluation.
+                      <a href="/prototyping-evaluation"> Read More </a>
                     </p>
                   </CardBody>
                 </Card>
